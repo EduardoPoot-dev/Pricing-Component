@@ -3,7 +3,6 @@ const toggle = document.querySelector('.toggle__circle')
 toggle.addEventListener('click', e => {
     toggle.classList.toggle('toggle__active')
 
-
     if(!toggle.classList.value.includes('toggle__active')) {
         anuallyHTML() 
         return
@@ -34,8 +33,6 @@ function anuallyHTML() {
     basic.innerHTML = `&dollar;${basicPrice}`
     professional.innerHTML = `&dollar;${professionalPrice}`
     master.innerHTML = `&dollar;${masterPrice}`
-
-    console.log(basic)
 }
 
 function monthHTML() {
